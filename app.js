@@ -1,18 +1,19 @@
-// Define the champion build database
-import { zoeBuild } from "./db/zoe.mjs";
-
-
-const buildDatabase = [zoeBuild];
+import { zoeBuild } from "./zoe.js";
 
 // Define the table generator function
+
 const generateTable = () => {
-  // Get the user input for the champion name
-  const championName = document.getElementById("championName").value;
+    const db = [zoeBuild];
+    const championName = document.getElementById("championName").value;
+    let championBuild = null;
+    for (const buildDatabase of db) {
+        championBuild = buildDatabase.find((build) => build.champion === championName);
+        if (championBuild) {
+            break;
+        }
+    }
 
-  // Find the champion build in the database
-  const championBuild = buildDatabase.find(build => build.champion === championName);
-
-  // If the champion build is not found, display an error message
+     // If the champion build is not found, display an error message
   if (!championBuild) {
     document.getElementById("result").innerHTML = `No build found for ${championName}.`;
     document.getElementById("result").style.display = "block";
@@ -32,4 +33,4 @@ const generateTable = () => {
   document.getElementById("result").innerHTML = tableHtml;
   document.getElementById("result").style.display = "block";
   document.getElementById("result").scrollIntoView();
-};
+}
