@@ -1,22 +1,28 @@
-import { zoeBuild } from "./zoe.js";
+import ChampionData from "./championData.js";
+import { zoeBuild } from "./champs/zoe.js"; 
+
 
 // Define the table generator function
-const generateTable = () => {
-  // Get the user input for the champion name
-  const buildDatabases = [zoeBuild];
+window.generate = () => {
+  console.log("Button clicked");
   const championName = document.getElementById("championName").value;
+  console.log("Entered championName:", championName);
 
   let championBuild = null;
 
-  for (const build of buildDatabases) {
-    if (build.champion === championName) {
-      championBuild = build;
-      break;
-    }
+  // Select the champion data based on the entered champion name
+  if (championName.toLowerCase() === "zoe") {
+    championBuild = zoeBuild;
+  } else if (championName.toLowerCase() === "Ashe") {
+    championBuild = asheBuild;
+  // } else if (championName.toLowerCase() === "DALSI CHAMPION") {
+   // championBuild = dalsiBuild; 
   }
+  
 
-  // If the champion build is not found, display an error message
+
   if (!championBuild) {
+    console.log("No build found for championName:", championName);
     document.getElementById("result").innerHTML = `No build found for ${championName}.`;
     document.getElementById("result").style.display = "block";
     document.getElementById("result").scrollIntoView();
@@ -26,8 +32,8 @@ const generateTable = () => {
   // Generate the table HTML
   let tableHtml = "<table>";
   tableHtml += "<tr><th>Item</th><th>Icon</th></tr>";
-  for (let i = 0; i < championBuild.items.length; i++) {
-    tableHtml += `<tr><td>${championBuild.items[i].name}</td><td><img src="${championBuild.items[i].icon}" alt="${championBuild.items[i].name}"></td></tr>`;
+  for (const build of championBuild.items) {
+    tableHtml += `<tr><td>${build.name}</td><td><img src="${build.icon}" alt="${build.name}"></td></tr>`;
   }
   tableHtml += "</table>";
 
@@ -36,3 +42,5 @@ const generateTable = () => {
   document.getElementById("result").style.display = "block";
   document.getElementById("result").scrollIntoView();
 };
+
+console.log("Hello World");
