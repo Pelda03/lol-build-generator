@@ -1,9 +1,9 @@
-import ChampionData from "./championData.js";
 import championMap from "./championMap.js";
 
 // Define the table generator function
 document.addEventListener("DOMContentLoaded", () => {
-  window.generate = () => {
+  const button = document.getElementById("button");
+  button.addEventListener("click", () => {
     console.log("Button clicked");
     const championName = document.getElementById("championName").value.toLowerCase(); // Convert to lowercase
 
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("result").innerHTML = tableHtml;
     document.getElementById("result").style.display = "block";
     document.getElementById("result").scrollIntoView();
-  };
+  });
 
   console.log("je to naloadovany");
 });
