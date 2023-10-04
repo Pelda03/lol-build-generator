@@ -55,7 +55,7 @@ import { jinxBuild } from "./champs/jinx.js";
 import { kaisaBuild } from "./champs/kaisa.js";
 import { kalistaBuild } from "./champs/kalista.js";
 import { karmaBuild } from "./champs/karma.js";
-import { karthusBuild } from "./champs/karthus.js";
+import { kartushBuild } from "./champs/karthus.js";
 import { kassadinBuild } from "./champs/kassadin.js";
 import { katarinaBuild } from "./champs/katarina.js";
 import { kayleBuild } from "./champs/kayle.js";
