@@ -1,4 +1,4 @@
-import ChampionData from "../championData";
+import ChampionData from "../championData.js";
 
 export const alistarBuild = new ChampionData("Alistar", [
     {name: "Jak'Sho, The Protean" , icon: "jaksho.png"},

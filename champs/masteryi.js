@@ -5,4 +5,5 @@ export const masteryiBuild = new championData("Master Yi", [
     {name: "Collector", icon: "collector.png"},
     {name: "Blade of the Ruined King", icon: "blade-of-the-ruined-king.png"},
     {name: "Kraken Slayer", icon: "kraken-slayer.png"},
+    {name: "Go 0/1 irl"}
 ]); 

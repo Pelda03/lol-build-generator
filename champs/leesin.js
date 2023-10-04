@@ -1,4 +1,4 @@
-import ChampionData from "../championData.js;"
+import ChampionData from "../championData.js"
 
 export const leesinBuild = new ChampionData("Leesin", [
     {name: "Duskblade of Draktharr", icon: "duskblade-of-draktharr.png"},

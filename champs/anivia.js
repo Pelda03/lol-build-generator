@@ -1,4 +1,4 @@
-import ChampionData from "../championData";
+import ChampionData from "../championData.js";
 
 export const aniviaBuild = new ChampionData("Anivia", [
     {name: "Liandry's Anguish", icon: "liandrys-anguish.png"},
