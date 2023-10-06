@@ -1,6 +1,6 @@
 import ChampionData from "../championData.js";
 
-export const briarBuild = new ChampionData ("Briar", [
+export const briarBUild = new ChampionData ("Briar", [
     {name: "Goredrinker", icon: "goredrinker.png"}, 
     // TO DO: Add the rest of the items
 

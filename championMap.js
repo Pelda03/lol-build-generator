@@ -17,7 +17,7 @@ import { belvethBuild } from "./champs/belveth.js";
 import { blitzcrankBuild } from "./champs/blitzcrank.js";
 import { brandBuild } from "./champs/brand.js";
 import { braumBuild } from "./champs/braum.js";
-import { briarBuild} from "./champs/briar.js";
+import { briarBuild } from "./champs/briar.js";
 import { caitlynBuild } from "./champs/caitlyn.js";
 import { camilleBuild } from "./champs/camille.js";
 import { cassiopeiaBuild } from "./champs/cassiopeia.js";
