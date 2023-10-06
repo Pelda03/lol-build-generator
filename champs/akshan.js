@@ -1,4 +1,4 @@
-import ChampionData from "../championData";
+import ChampionData from "../championData.js";
  export const akshanBuild = new ChampionData("Akshan", [
     {name: "Kraken Slayer", icon: "kraken-slayer.png"},
     {name: "Guinsoo's Rageblade", icon: "guinsoos-rageblade.png"},

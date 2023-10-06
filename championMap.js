@@ -55,7 +55,7 @@ import { jinxBuild } from "./champs/jinx.js";
 import { kaisaBuild } from "./champs/kaisa.js";
 import { kalistaBuild } from "./champs/kalista.js";
 import { karmaBuild } from "./champs/karma.js";
-import { kartushBuild } from "./champs/karthus.js";
+import { kartushBuild } from "./champs/kartush.js";
 import { kassadinBuild } from "./champs/kassadin.js";
 import { katarinaBuild } from "./champs/katarina.js";
 import { kayleBuild } from "./champs/kayle.js";
@@ -321,8 +321,8 @@ const championMap = new Map([
   [xayahBuild.championName.toLowerCase(), xayahBuild],
   [xerathBuild.championName.toLowerCase(), xerathBuild],
   [xinzhaoBuild.championName.toLowerCase(), xinzhaoBuild],
-  [yasuoBuild.championName.toLowerCase(), yasuoBuild],
-  [yoneBuild.championName.toLowerCase(), yoneBuild],
+  [yasuoBuild.championName.toLowerCase(), yasuoBuild], //TODO: add yasuo icon
+  [yoneBuild.championName.toLowerCase(), yoneBuild], //TODO: add yone icon
   [yuumiBuild.championName.toLowerCase(), yuumiBuild],
   [zacBuild.championName.toLowerCase(), zacBuild],
   [zedBuild.championName.toLowerCase(), zedBuild],

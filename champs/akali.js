@@ -1,4 +1,4 @@
-import ChampionData from "../championData";
+import ChampionData from "../championData.js";
 
 export const akaliBuild = new ChampionData("Akali", [
     {name: "Hextech Rocketbelt", icon: "hextech-rocketbelt.png"},

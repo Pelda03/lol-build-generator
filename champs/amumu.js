@@ -1,4 +1,4 @@
-import ChampionData from "../championData";
+import ChampionData from "../championData.js";
 
 export const amumuBuild = new ChampionData("Amumu", [
     {name: "Sunfire Aegis", icon: "sunfire-aegis.png"},
