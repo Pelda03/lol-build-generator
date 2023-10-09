@@ -1,7 +1,6 @@
 import ChampionData from "../championData.js";
-import championData from "../championData.js";
 
-export const malzaharBuild = new Champion("Malzahar", [
+export const malzaharBuild = new ChampionData("Malzahar", [
     {name: "Liandry's Anguish", icon: "liandrys-anguish.png"},
     {name: "Demonic Embrace", icon: "demonic-embrace.png"},
     {name: "Rylai's Crystal Scepter", icon: "rylais-crystal-scepter.png"},

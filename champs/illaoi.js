@@ -1,6 +1,6 @@
-import championData from "../championData.js";
+import ChampionData from "../championData.js";
 
-export const illaoiBuild = new Champion("Illaoi", [
+export const illaoiBuild = new ChampionData("Illaoi", [
     {name: "Divine Sunderer", icon: "divine-sunderer.png"},
     {name: "Sterak's Gage", icon: "steraks-gage.png"},
     {name: "Spirit Visage", icon: "spirit-visage.png"},

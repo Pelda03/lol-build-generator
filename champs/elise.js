@@ -1,4 +1,4 @@
-import championData from "../championData.js";
+import ChampionData from "../championData.js";
 
 export const eliseBuild = new ChampionData ("Elise", [
     {name: "Night Harvester", icon: "night-harvester.png"},

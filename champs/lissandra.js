@@ -1,4 +1,4 @@
-import championData from "../championData.js";
+import ChampionData from "../championData.js";
 
 export const lissandraBuild = new ChampionData("Lissandra", [
     {name: "Luden's Tempest", icon: "ludens-tempest.png"},

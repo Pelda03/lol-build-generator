@@ -330,7 +330,7 @@ const championMap = new Map([
   [ziggsBuild.championName.toLowerCase(), ziggsBuild],
   [zileanBuild.championName.toLowerCase(), zileanBuild],
   [zyraBuild.championName.toLowerCase(), zyraBuild],
-  [zoeBuild.championName.toLowercase(), zoeBuild],
+  [zoeBuild.championName.toLowerCase(), zoeBuild],
 ]);
 
 export default championMap;
